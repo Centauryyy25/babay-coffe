@@ -19,19 +19,6 @@ export default function HomePage() {
       <section id="about" className="py-16 px-6 sm:px-10 lg:px-20">
         <ContentSection />
       </section>
-
-      {/* Location Section */}
-      <section id="location" className="py-16 px-6 sm:px-10 lg:px-20 bg-[#fff7ed]">
-        <LocationSection />
-      </section>
-
-      {/* Gallery Section */}
-      <section id="gallery" className="py-16 px-6 sm:px-10 lg:px-20">
-        <GallerySection />
-      </section>
-
-      {/* Footer */}
-      <Footer />
     </main>
   );
 }

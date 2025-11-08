@@ -1,9 +1,37 @@
-import Image from "next/image";
+"use client";
 
-export default function Home() {
+import Navbar from "@/components/Navbar";
+import HeroSection from "@/components/HeroSection";
+import ContentSection from "@/components/ContentSection";
+
+export default function HomePage() {
   return (
-    <div className="flex min-h-screen text-5xl items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <div>Babay Caffe</div>
-    </div>
+    <main className="flex flex-col min-h-screen bg-[#f9f6f1] text-[#3b2f2f]">
+      {/* Navbar */}
+      <Navbar />
+
+      {/* Hero Section */}
+      <section id="home">
+        <HeroSection />
+      </section>
+
+      {/* Content Section */}
+      <section id="about" className="py-16 px-6 sm:px-10 lg:px-20">
+        <ContentSection />
+      </section>
+
+      {/* Location Section */}
+      <section id="location" className="py-16 px-6 sm:px-10 lg:px-20 bg-[#fff7ed]">
+        <LocationSection />
+      </section>
+
+      {/* Gallery Section */}
+      <section id="gallery" className="py-16 px-6 sm:px-10 lg:px-20">
+        <GallerySection />
+      </section>
+
+      {/* Footer */}
+      <Footer />
+    </main>
   );
 }
